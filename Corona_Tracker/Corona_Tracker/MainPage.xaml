@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Corona_Tracker.MainPage"
+             BackgroundColor="black">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+
+        <Label Text="Coronavirus i Danmark"
+               HorizontalOptions="Center"
+               FontSize="30"
+               TextColor="White"
+               Margin="20" />
+
+        <Label Text="Tilfælde i alt"
+               HorizontalOptions="Center"
+               FontSize="20"
+               TextColor="white" />
+        <Label x:Name="Cases"
+               Text="{Binding Cases}"
+               HorizontalOptions="Center"
+               FontSize="30"
+               TextColor="white"
+               Margin="0,2,0,7.5" />
+
+        <Label Text="Tilfælde i dag"
+               HorizontalOptions="Center"
+               FontSize="20"
+               TextColor="white" />
+        <Label x:Name="TodayCases"
+               Text="{Binding TodayCases}"
+               HorizontalOptions="Center"
+               FontSize="30"
+               TextColor="white"
+               Margin="0,2,0,7.5" />
+
+        <Label Text="Døde i alt"
+               HorizontalOptions="Center"
+               FontSize="20"
+               TextColor="white" />
+        <Label x:Name="Deaths"
+               Text="{Binding Deaths}"
+               HorizontalOptions="Center"
+               FontSize="30"
+               TextColor="white"
+               Margin="0,2,0,7.5" />
+
+        <Label Text="Døde i dag"
+               HorizontalOptions="Center"
+               FontSize="20"
+               TextColor="white" />
+        <Label x:Name="TodayDeaths"
+               Text="{Binding TodayDeaths}"
+               HorizontalOptions="Center"
+               FontSize="30"
+               TextColor="white"
+               Margin="0,2,0,7.5" />
+
+        <Label Text="Genvundet helbred"
+               HorizontalOptions="Center"
+               FontSize="20"
+               TextColor="white" />
+        <Label x:Name="Recovered"
+               Text="{Binding Recovered}"
+               HorizontalOptions="Center"
+               FontSize="30"
+               TextColor="white"
+               Margin="0,2,0,7.5" />
+
+        <Label Text="Kritisk tilstand"
+               HorizontalOptions="Center"
+               FontSize="20"
+               TextColor="white" />
+        <Label x:Name="Critical"
+               Text="{Binding Critical}"
+               HorizontalOptions="Center"
+               FontSize="30"
+               TextColor="white"
+               Margin="0,2,0,7.5" />
+    </StackLayout>
+
+
+</ContentPage>  
