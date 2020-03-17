@@ -8,25 +8,25 @@ using Xamarin.Forms;
 
 namespace Corona_Tracker
 {
-    // Learn more about making custom code visible in the Xamarin.Forms previewer
-    // by visiting https://aka.ms/xamarinforms-previewer
     [DesignTimeVisible(false)]
     public partial class MainPage: ContentPage
     {
 
-       
         public MainPage()
         {
             InitializeComponent();
+            // Create Repository
             Repository repository = new Repository();
+            // Create object
             Corona CoronaChosenCountry = repository.GetCoronaTrackingForCountry("Denmark");
 
-            Cases.BindingContext = CoronaChosenCountry;
-            TodayCases.BindingContext = CoronaChosenCountry;
-            Deaths.BindingContext = CoronaChosenCountry;
-            TodayDeaths.BindingContext = CoronaChosenCountry;
-            Recovered.BindingContext = CoronaChosenCountry;
-            Critical.BindingContext = CoronaChosenCountry;
+            // Assign binding values
+            Cases.BindingContext = CoronaChosenCountry.Cases;
+            TodayCases.BindingContext = CoronaChosenCountry.TodayCases;
+            Deaths.BindingContext = CoronaChosenCountry.Deaths;
+            TodayDeaths.BindingContext = CoronaChosenCountry.TodayDeaths;
+            Recovered.BindingContext = CoronaChosenCountry.Recovered;
+            Critical.BindingContext = CoronaChosenCountry.Critical;
         }
     }
 }

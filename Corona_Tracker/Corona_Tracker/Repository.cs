@@ -15,7 +15,7 @@ namespace Corona_Tracker
         protected readonly string url = @"https://corona.lmao.ninja/countries/";
         protected string result;
         protected Task<HttpResponseMessage> httpResponse;
-
+        
         public List<Corona> GetCoronaTracking()
         {
             using(WebClient client = new WebClient())
