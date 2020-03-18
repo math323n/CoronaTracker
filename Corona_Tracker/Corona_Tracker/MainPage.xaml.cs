@@ -21,12 +21,12 @@ namespace Corona_Tracker
             Corona CoronaChosenCountry = repository.GetCoronaTrackingForCountry("Denmark");
 
             // Assign binding values
-            Cases.BindingContext = CoronaChosenCountry.Cases;
-            TodayCases.BindingContext = CoronaChosenCountry.TodayCases;
-            Deaths.BindingContext = CoronaChosenCountry.Deaths;
-            TodayDeaths.BindingContext = CoronaChosenCountry.TodayDeaths;
-            Recovered.BindingContext = CoronaChosenCountry.Recovered;
-            Critical.BindingContext = CoronaChosenCountry.Critical;
+            Cases.BindingContext = CoronaChosenCountry;
+            TodayCases.BindingContext = CoronaChosenCountry;
+            Deaths.BindingContext = CoronaChosenCountry;
+            TodayDeaths.BindingContext = CoronaChosenCountry;
+            Recovered.BindingContext = CoronaChosenCountry;
+            Critical.BindingContext = CoronaChosenCountry;
         }
     }
 }
