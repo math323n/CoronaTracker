@@ -9,7 +9,7 @@ using Android.OS;
 
 namespace Corona_Tracker.Droid
 {
-    [Activity(Label = "Corona_Tracker", Icon = "@drawable/biohazard", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "Corona Tracker", Icon = "@drawable/biohazard", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)

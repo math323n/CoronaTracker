@@ -12,7 +12,7 @@ namespace Corona_Tracker
 {
     public class Repository
     {
-        protected readonly string url = @"https://corona.lmao.ninja/countries/";
+        protected readonly string url = @"https://corona.lmao.ninja/v2/countries/";
         protected string result;
         protected Task<HttpResponseMessage> httpResponse;
         
